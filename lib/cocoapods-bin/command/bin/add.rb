@@ -1,9 +1,11 @@
 module Pod
   class Command
     class Bin < Command
-      class Listb < Bin 
-        self.summary = '展示所有已经下载的源码以及大小'
-        
+      class Add < Bin
+        self.summary = '再不删除二进制的情况下为组件添加源码调试能力,多个组件名称用空格分隔'
+
+ 
+
         def initialize(argv)
           @update = argv.flag?('update')
           @code  = argv.flag?('code')

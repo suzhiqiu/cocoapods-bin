@@ -8,7 +8,8 @@ require 'cocoapods-bin/command/bin/list'
 require 'cocoapods-bin/command/bin/archive'
 require 'cocoapods-bin/helpers'
 require 'cocoapods-bin/command/bin/lista'
-require 'cocoapods-bin/command/bin/listb'
+require 'cocoapods-bin/command/bin/add'
+require 'cocoapods-bin/command/bin/clean'
 
 module Pod
   class Command
