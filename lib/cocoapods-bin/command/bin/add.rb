@@ -24,10 +24,45 @@ module Pod
          # if output.empty
           #  UI.puts "没找到二进制编译路径信息".red
          # end
-         # https://github.com/suzhiqiu/UCARRobot.git
-         # command = 'git clone  https://github.com/suzhiqiu/UCARRobot  ~/Downloads/'
-         # output = `#{command}`.lines.to_a
+          UI.puts "开始下载...".red
+          command = 'git clone  https://github.com/suzhiqiu/UCARRobot  ~/Downloads/q'
+          output = `#{command}`.lines.to_a
+          UI.puts "完成...".red
+          list
+          delete
         end
+
+        def list()
+          UI.puts "开始统计大小...".red
+          # @path = ''
+          command = 'du -sh  /Users/suzhiqiu/Desktop/bin/lib/* | sort -n'
+          output = `#{command}`
+          UI.puts "#{output}"
+          UI.puts "结束统计大小...".red
+        end
+
+        def list()
+          UI.puts "开始统计大小...".red
+          # @path = ''
+          command = 'du -sh  /Users/suzhiqiu/Desktop/bin/lib/* | sort -n'
+          output = `#{command}`
+          UI.puts "#{output}"
+          UI.puts "结束统计大小...".red
+        end
+
+        def delete()
+          UI.puts "开始删除...".red
+          # @path = ''
+          command = 'rm -rf  /Users/suzhiqiu/Downloads/q'
+          output = `#{command}`
+          UI.puts "#{output}"
+          UI.puts "结束删除...".red
+        end
+
+
+
+
+
 
       end
     end
