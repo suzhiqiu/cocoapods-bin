@@ -1,7 +1,7 @@
 module Pod
   class Command
     class Bin < Command
-      class Lista < Bin 
+      class Listb < Bin 
         self.summary = '展示所有已经下载的源码以及大小'
         
         def initialize(argv)

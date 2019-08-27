@@ -6,8 +6,9 @@ require 'cocoapods-bin/command/bin/open'
 require 'cocoapods-bin/command/bin/search'
 require 'cocoapods-bin/command/bin/list'
 require 'cocoapods-bin/command/bin/archive'
-require 'cocoapods-bin/command/bin/lista'
 require 'cocoapods-bin/helpers'
+require 'cocoapods-bin/command/bin/lista'
+require 'cocoapods-bin/command/bin/listb'
 
 module Pod
   class Command
