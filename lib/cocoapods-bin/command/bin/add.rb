@@ -5,11 +5,11 @@ module Pod
       class Add < Bin
         self.summary = '再不删除二进制的情况下为组件添加源码调试能力,多个组件名称用逗号分隔'
 
-     #   def initialize(argv)
-      #    @nameArgv = argv.shifint_argument
-     #     UI.puts "add输入参数:#{@nameArgv}".red
-      #    super
-      #  end
+       def initialize(argv)
+            @nameArgv = argv.shift_argument
+            UI.puts "add输入参数:#{@nameArgv}".red
+            super
+        end
 
         def run        
           addSource

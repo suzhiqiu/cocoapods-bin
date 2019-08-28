@@ -6,7 +6,7 @@ module Pod
         self.arguments = []
 
         def run
-         @path = '/Users/suzhiqiu/Downloads/q'
+         path = '/Users/suzhiqiu/Downloads/q'
          delete(path)
         end
         
